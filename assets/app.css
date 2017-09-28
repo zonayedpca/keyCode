@@ -21,9 +21,17 @@ table {
 }
 
 td {
+    position: relative;
     border: 3px solid #111;
     padding: 15px 5px;
     background: #000;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
 }
 
 .active {

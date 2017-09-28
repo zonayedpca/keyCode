@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>keyCode - Every stroke is unique</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/app.css">
     </head>
     <body>
     <!-- Viewer -->
@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="view">
-                    <p>Here will be the inputs</p>
+                    <p class="display">Here will be the inputs</p>
                 </div>
             </div>
         </div>
@@ -23,22 +23,22 @@
                     <div class="function">
                         <table>
                             <tr>
-                                <td>esc</td>
-                                <td>f1</td>
-                                <td>f2</td>
-                                <td>f3</td>
-                                <td>f4</td>
-                                <td>f5</td>
-                                <td>f6</td>
-                                <td>f7</td>
-                                <td>f8</td>
-                                <td>f9</td>
-                                <td>f10</td>
-                                <td>f11</td>
-                                <td>f12</td>
-                                <td>insert</td>
-                                <td>prt sc</td>
-                                <td>delete</td>
+                                <td id="Escape">esc</td>
+                                <td id="F1">f1</td>
+                                <td id="F2">f2</td>
+                                <td id="F3">f3</td>
+                                <td id="F4">f4</td>
+                                <td id="F5">f5</td>
+                                <td id="F6">f6</td>
+                                <td id="F7">f7</td>
+                                <td id="F8">f8</td>
+                                <td id="F9">f9</td>
+                                <td id="F10">f10</td>
+                                <td id="F11">f11</td>
+                                <td id="F12">f12</td>
+                                <td id="Insert">insert</td>
+                                <td id="NaN">prt sc</td>
+                                <td id="Delete" style="width: 8%">delete</td>
                             </tr>
                         </table>
                     </div>
@@ -57,26 +57,28 @@
                                 <td><span>&#40;</span>9</td>
                                 <td><span>&#41;</span>10</td>
                                 <td style="width: 10%">backspace</td>
-                                <td>home</td>
+                                <td style="width: 8%">home</td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <table>
                             <tr>
-                                <td style="width: 9%"><span>&#39;</span>&#126;</td>
-                                <td><span>&#33;</span>1</td>
-                                <td><span>&#64;</span>2</td>
-                                <td><span>&#35;</span>3</td>
-                                <td><span>&#36;</span>4</td>
-                                <td><span>&#37;</span>5</td>
-                                <td><span>&#94;</span>6</td>
-                                <td><span>&amp;</span>7</td>
-                                <td><span>&#42;</span>8</td>
-                                <td><span>&#40;</span>9</td>
-                                <td><span>&#41;</span>10</td>
-                                <td>backspace</td>
-                                <td>home</td>
+                                <td style="width: 9%">tab</td>
+                                <td>Q</td>
+                                <td>W</td>
+                                <td>E</td>
+                                <td>R</td>
+                                <td>T</td>
+                                <td>Y</td>
+                                <td>U</td>
+                                <td>I</td>
+                                <td>O</td>
+                                <td>P</td>
+                                <td><span>&#41;</span>&#91;</td>
+                                <td><span>&#41;</span>&#93;</td>
+                                <td><span>&#41;</span>&#92;</td>
+                                <td style="width: 8%">pg up</td>
                             </tr>
                         </table>
                     </div>
@@ -84,19 +86,19 @@
                         <table>
                             <tr>
                                 <td style="width: 10%">caps lock</td>
-                                <td><span>A</span>a</td>
-                                <td><span>S</span>s</td>
-                                <td><span>D</span>d</td>
-                                <td><span>F</span>f</td>
-                                <td><span>G</span>g</td>
-                                <td><span>H</span>h</td>
-                                <td><span>J</span>j</td>
-                                <td><span>K</span>k</td>
-                                <td><span>L</span>l</td>
-                                <td><span>A</span>;</td>
-                                <td><span>"</span>'</td>
+                                <td>A</td>
+                                <td>S</td>
+                                <td>D</td>
+                                <td>F</td>
+                                <td>G</td>
+                                <td>H</td>
+                                <td>J</td>
+                                <td>K</td>
+                                <td>L</td>
+                                <td><span>&#58;</span>&#59;</td>
+                                <td><span>"</span>&#39;</td>
                                 <td style="width: 12%">enter</td>
-                                <td>pg dn</td>
+                                <td style="width: 8%">pg dn</td>
                             </tr>
                         </table>
                     </div>
@@ -104,35 +106,35 @@
                         <table>
                             <tr>
                                 <td style="width: 12%">shift</td>
-                                <td><span>Z</span>z</td>
-                                <td><span>X</span>x</td>
-                                <td><span>C</span>c</td>
-                                <td><span>V</span>v</td>
-                                <td><span>B</span>b</td>
-                                <td><span>N</span>n</td>
-                                <td><span>M</span>m</td>
+                                <td>Z</td>
+                                <td>X</td>
+                                <td>C</td>
+                                <td>V</td>
+                                <td>B</td>
+                                <td>N</td>
+                                <td>M</td>
                                 <td><span>&lt;</span>,</td>
                                 <td><span>&gt;</span>.</td>
                                 <td><span>&#63;</span>/</td>
                                 <td style="width: 15%">shift</td>
-                                <td>home</td>
+                                <td style="width: 8%">end</td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <table>
                             <tr>
-                                <td><span>&#39;</span>&#126;</td>
-                                <td><span>&#33;</span>1</td>
-                                <td><span>&#64;</span>2</td>
-                                <td><span>&#35;</span>3</td>
-                                <td style="width: 33%"><span>&#36;</span>4</td>
-                                <td><span>&#37;</span>5</td>
-                                <td><span>&#94;</span>6</td>
-                                <td><span>&amp;</span>7</td>
-                                <td><span>&#42;</span>8</td>
-                                <td><span>&#40;</span>9</td>
-                                <td><span>&#41;</span>10</td>
+                                <td>ctrl</td>
+                                <td>js</td>
+                                <td>zn</td>
+                                <td>alt</td>
+                                <td style="width: 33%">space</td>
+                                <td>alt</td>
+                                <td>ctrl</td>
+                                <td>la</td>
+                                <td>da</td>
+                                <td>ta</td>
+                                <td>ra</td>
                             </tr>
                         </table>
                     </div>
@@ -148,5 +150,6 @@
             </div>
         </div>
     </footer>
+    <script src="assets/app.js"></script>
     </body>
 </html>
