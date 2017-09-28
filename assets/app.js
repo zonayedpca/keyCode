@@ -28,10 +28,15 @@ var UIController = (function() {
 })();
 
 var MainController = (function(uictrl) {
-    var keyselector, id, classs;
+    var x, keyselector, id, classs;
     
     var init = function() {
-        keyselector = uictrl.selector();
+        x = (classs === undefined ? true:false);
+        keyselector = uictrl.selector().key;
+        
+        if(x === false) {
+            classs.removeAttribute('class');
+        }
     };
     
     init();
@@ -40,15 +45,12 @@ var MainController = (function(uictrl) {
         init();
         event.preventDefault();
         id = event.target.id;
-        classs = event.target;
+        classs = event.target;    
         uictrl.element(id);
         uictrl.activeElement(classs);
     });
     
     document.addEventListener('keydown', function(event) {
-//        event.preventDefault();
-//        var keySave = event.key;
-////        console.log(keySave);
-//        document.querySelector(keySave).setAttribute = 'active';
+//        console.log(event.key);
     });
 })(UIController);
